@@ -115,12 +115,19 @@
 
         methods: {
             register () {
-                this.$snackbar.open({
-                    message: 'Fake Signup successful!',
-                    type: 'is-success',
-                    position: 'is-top',
-                    actionText: 'Close'
-                })
+                this.isLoading = true
+                
+                setTimeout(() => {
+                    this.isLoading = false
+                    this.$parent.close()
+                    
+                    this.$snackbar.open({
+                        message: 'Fake signup successful!',
+                        type: 'is-success',
+                        position: 'is-top',
+                        actionText: 'Close'
+                    })
+                }, 1200);
             }
         }
     }

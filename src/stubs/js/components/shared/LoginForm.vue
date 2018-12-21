@@ -54,12 +54,19 @@
 
         methods: {
             login () {
-                this.$snackbar.open({
-                    message: 'Fake login successful!',
-                    type: 'is-success',
-                    position: 'is-top',
-                    actionText: 'Close'
-                })
+                this.isLoading = true
+                
+                setTimeout(() => {
+                    this.isLoading = false
+                    this.$parent.close()
+
+                    this.$snackbar.open({
+                        message: 'Fake login successful!',
+                        type: 'is-success',
+                        position: 'is-top',
+                        actionText: 'Close'
+                    })
+                }, 1200);
             }
         }
     }

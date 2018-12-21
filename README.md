@@ -1,6 +1,6 @@
 ### Buefy Frontend Preset For Laravel
 
-This preset provides UI components that marry [Bulma](https://bulma.io/) and [VueJS](https://vuejs.org/) together in the form of [Buefy](https://buefy.github.io/documentation/snackbar) for any new [Laravel](https://laravel.com/) site / web-app. In Buefy's own words, it is provides:
+This preset provides UI components that marry [Bulma](https://bulma.io/) and [VueJS](https://vuejs.org/) together in the form of [Buefy](https://buefy.github.io/documentation/snackbar) for any new [Laravel](https://laravel.com/) site / web-app. In Buefy's own words, it provides:
  > Lightweight UI components for Vue.js based on Bulma.
 
 <!-- <p align="center">

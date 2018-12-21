@@ -1,0 +1,73 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:500,500i,700,700i|Roboto+Slab:400,700');
+
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Variables
+@import 'variables';
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+// Setup for Custom Scrollbars
+#app, .content, body, html {
+    overflow-y: auto !important;
+}
+
+// Navbar
+.navbar-brand {
+    font-weight: 700;
+    font-family: $font-family-serif;
+}
+
+// Environment Indicator
+#env-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 3px;
+    z-index: 100;
+}
+
+// Configure environment-wise colors you need per environment
+#env-indicator.local {
+    background-color: $primary;
+}
+
+#env-indicator.dev {
+    background-color: $primary-invert;
+}
+
+// Hide the environment indicator on your choice of environments
+#env-indicator.production,
+#env-indicator.staging {
+    display: none !important;
+}
+
+// Version Badge
+#version-badge {
+    font-size: 0.20em !important;
+}
+
+// Links
+.links a {
+    display: inline-block;
+    margin: auto 1em;
+}
+
+// Custom-Scrollbars
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: $light;
+    z-index: 1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    z-index: 2;
+}

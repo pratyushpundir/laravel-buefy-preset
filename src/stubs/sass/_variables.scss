@@ -1,0 +1,54 @@
+// Primary Variables
+$orange: hsl(14, 100%, 53%);
+$yellow: hsl(48, 100%, 67%);
+$green: hsl(141, 71%, 48%);
+$turquoise: hsl(171, 100%, 41%);
+$cyan: hsl(204, 86%, 53%);
+$blue: hsl(217, 71%, 53%);
+$purple: hsl(271, 100%, 71%);
+$red: hsl(348, 100%, 61%);
+
+// Derived Variables
+$primary: $turquoise;
+$primary-invert: white;
+$info: $cyan;
+$info-invert: white;
+$success: $green;
+$success-invert: white;
+$warning: $yellow;
+$warning-invert: rgba(0, 0, 0, 0.7);
+$danger: $red;
+$danger-invert: white;
+$dark: hsl(0, 0%, 21%);
+$dark-invert: hsl(0, 0%, 96%);
+$light: hsl(0, 0%, 96%);
+$light-invert: hsl(0, 0%, 21%);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "dark": ($dark, $dark-invert)
+);
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-serif: "Roboto Slab", serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-serif !important;
+}
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Buefy Variables
+$speed-slow: 150ms !default;
+$speed-slower: 250ms !default;

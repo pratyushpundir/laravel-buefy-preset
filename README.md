@@ -4,7 +4,7 @@ This preset provides UI components that marry [Bulma](https://bulma.io/) and [Vu
  > Lightweight UI components for Vue.js based on Bulma.
 
 <!-- <p align="center">
-  <img width="1080" src="https://i.ibb.co/P4nkwgz/Screenshot-2018-12-16-at-3-06-07-PM.png" alt="Screenshot-2018-12-16-at-3-06-07-PM" border="0">
+  <img width="1080" src="" alt="Screenshot" border="0">
 </p> -->
  
 ### What it does

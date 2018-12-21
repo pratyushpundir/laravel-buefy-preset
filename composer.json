@@ -1,0 +1,25 @@
+{
+    "name": "pratyushpundir/laravel-buefy-preset",
+    "description": "This preset provides UI components that marry Bulma and VueJS together in the form of Buefy for any new Laravel site / web-app.",
+    "license": "MIT",
+    "keywords": ["laravel", "laravel frontend presets", "bulma", "buefy", "vuejs", "laravel vue bulma", "laravel bulma vuejs"],
+    "authors": [
+        {
+            "name": "pratyushpundir",
+            "email": "pratyushpundir@icloud.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "PratyushPundir\\LaravelBuefyPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PratyushPundir\\LaravelBuefyPreset\\BuefyServiceProvider"
+            ]
+        }
+    }
+}

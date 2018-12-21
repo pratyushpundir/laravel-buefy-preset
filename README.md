@@ -3,9 +3,9 @@
 This preset provides UI components that marry [Bulma](https://bulma.io/) and [VueJS](https://vuejs.org/) together in the form of [Buefy](https://buefy.github.io/documentation/snackbar) for any new [Laravel](https://laravel.com/) site / web-app. In Buefy's own words, it provides:
  > Lightweight UI components for Vue.js based on Bulma.
 
-<!-- <p align="center">
-  <img width="1080" src="" alt="Screenshot" border="0">
-</p> -->
+<p align="center">
+  <img width="1080" src="https://i.ibb.co/JCr7Xrb/Screen-Flow.gif" alt="Animation" border="0">
+</p>
  
 ### What it does
  - Removes ````bootstrap```` in favor of ````bulma```` and provides VueJS components to easily use all (and more...) of the Bulma components.

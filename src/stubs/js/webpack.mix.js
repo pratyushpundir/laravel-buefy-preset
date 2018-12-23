@@ -13,7 +13,7 @@ const mix = require('laravel-mix');
 
 mix.sass('resources/sass/app.scss', 'public/css')
     .js('resources/js/app.js', 'public/js')
-    .extract(['vue']);
+    .extract();
 
 if (mix.inProduction()) {
     mix.version();

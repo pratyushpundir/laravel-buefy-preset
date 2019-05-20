@@ -16,14 +16,18 @@
             </div>
         @endif
 
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="primary-nav" @click="toggleMobileMenu">
+        <a role="button" :class="['navbar-burger burger', {
+            'is-active': mobileMenuOpen
+        }]" aria-label="menu" aria-expanded="false" data-target="primary-nav" @click="toggleMobileMenu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </a>
     </div>
 
-    <div id="primary-nav" class="navbar-menu">
+    <div id="primary-nav" :class="['navbar-menu', {
+        'is-active': mobileMenuOpen
+    }">
         <div class="navbar-start">
 
             <div class="navbar-item has-dropdown is-hoverable">

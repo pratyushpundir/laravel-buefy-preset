@@ -47,6 +47,7 @@ class Preset extends LaravelPreset
             "bootstrap",
             "lodash",
             "popper.js",
+            "jquery",
             "bulma"
         ];
 
@@ -75,7 +76,7 @@ class Preset extends LaravelPreset
         copy(__DIR__ . '/stubs/js/bootstrap.js', resource_path('js/bootstrap.js'));
         copy(__DIR__ . '/stubs/js/app.js', resource_path('js/app.js'));
 
-        if (! File::isDirectory(resource_path('js/components/shared'))) {
+        if (!File::isDirectory(resource_path('js/components/shared'))) {
             File::makeDirectory(resource_path('js/components/shared'));
         } else {
             File::cleanDirectory(resource_path('js/components/shared'));
@@ -102,7 +103,7 @@ class Preset extends LaravelPreset
      */
     public static function updateBladeViews()
     {
-        if (! File::isDirectory(resource_path('views/buefy'))) {
+        if (!File::isDirectory(resource_path('views/buefy'))) {
             File::makeDirectory(resource_path('views/buefy'));
         } else {
             File::cleanDirectory(resource_path('views/buefy'));

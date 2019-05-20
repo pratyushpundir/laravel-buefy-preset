@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -11,7 +10,9 @@ import LoginForm from './components/shared/LoginForm.vue'
 import RegisterForm from './components/shared/RegisterForm.vue'
 
 window.Vue = require('vue')
-Vue.use(Buefy, { defaultIconPack: 'fas' })
+Vue.use(Buefy, {
+    defaultIconPack: 'fas'
+})
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -25,21 +26,19 @@ Vue.component('register-form', RegisterForm)
 const app = new Vue({
     el: '#app',
 
-    data () {
+    data() {
         return {
-            userIsLoggedIn: false
+            userIsLoggedIn: false,
+            mobileMenuOpen: false
         }
     },
 
     methods: {
-        toggleMobileMenu () {
-            /* eslint-disable */
-            $(".navbar-burger").toggleClass("is-active")
-            $(".navbar-menu").toggleClass("is-active")
-            /* eslint-enable */
+        toggleMobileMenu() {
+            this.mobileMenuOpen = !this.mobileMenuOpen
         },
 
-        openLoginModal () {
+        openLoginModal() {
             this.$modal.open({
                 parent: this,
                 component: LoginForm,
@@ -47,7 +46,7 @@ const app = new Vue({
             })
         },
 
-        openRegisterModal () {
+        openRegisterModal() {
             this.$modal.open({
                 parent: this,
                 component: RegisterForm,

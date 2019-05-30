@@ -27,7 +27,7 @@
 
     <div id="primary-nav" :class="['navbar-menu', {
         'is-active': mobileMenuOpen
-    }">
+    }]">
         <div class="navbar-start">
 
             <div class="navbar-item has-dropdown is-hoverable">

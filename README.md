@@ -19,7 +19,7 @@ This preset provides UI components that marry [Bulma](https://bulma.io/) and [Vu
 
 
 ### WARNING!!
- The preset provided Blade views are namespaced their own directory, ```/bulma``` so nothing should go wrong on that front, but, for a non-fresh project, it ***will 100%*** squash any custom JS, SASS, Mix code you may have written). ___You have been warned!___
+ The preset provided Blade views are namespaced their own directory, ```/buefy``` so nothing should go wrong on that front, but, for a non-fresh project, it ***will 100%*** squash any custom JS, SASS, Mix code you may have written). ___You have been warned!___
  
 
  ### Getting Started

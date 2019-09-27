@@ -10,7 +10,7 @@
     <!-- Custom Meta Tags -->
     @yield('meta-tags')
 
-    <title>{{ title_case(env('APP_NAME', 'Laravel')) }}</title>
+    <title>{{ class_exists('Str') ? Str::title(env('APP_NAME', 'Laravel')) : title_case(env('APP_NAME', 'Laravel')) }}</title>
 
     <!-- Fonts & Icons -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -27,7 +27,7 @@
         @yield('content')
     </main>
 
-    <div id="env-indicator" class="{{ kebab_case(env('APP_ENV')) }}"></div>
+    <div id="env-indicator" class="{{ class_exists('Str') ? Str::kebab(env('APP_ENV')) : kebab_case(env('APP_ENV')) }}"></div>
 </div>
 
 <!-- Scripts -->

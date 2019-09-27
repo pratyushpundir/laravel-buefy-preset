@@ -77,7 +77,7 @@ class Preset extends LaravelPreset
         copy(__DIR__ . '/stubs/js/app.js', resource_path('js/app.js'));
 
         if (!File::isDirectory(resource_path('js/components/shared'))) {
-            File::makeDirectory(resource_path('js/components/shared'));
+            File::makeDirectory(resource_path('js/components/shared'), 0755, true);
         } else {
             File::cleanDirectory(resource_path('js/components/shared'));
         }
